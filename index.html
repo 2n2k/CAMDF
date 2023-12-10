@@ -2,58 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CAMDF CTF</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: white;
-            padding: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> CAMDF CTF </title>
 </head>
 <body>
-    <header>
-        <h1>CAMDF CTF</h1>
-    </header>
+  <canvas id="Matrix"></canvas>
+  <script src=" ./matrix.js"></script>
+  <header>
+        <h1 class="title">CAMDF CTF</h1>
+  </header>
     <nav>
         <ul>
             <li><a href="index.html" class="button">Home</a></li>
@@ -61,12 +20,15 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <main>
     <section>
         <h2>Welcome to the CAMDF CTF!</h2>
-        <p>This CTF is made as a project by Vilnius University Information Systems and Cybesecurity students Adris and Matas.</p>
+        <p>This CTF is made as a project by the Vilnius University Information Systems and Cybersecurity students Adris and Matas.</p>
+        <p>The challenges were made for beginners so all of them should be pretty easy to complete. </p>
     </section>
+  </main>
     <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
+        <p>&copy; 2023 CAMDF CTF. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -2,71 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CAMDF CTF</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> CAMDF CTF </title>
     <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            color: white;
-            padding: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+        .challenge-item .description {
+            display: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>CAMDF CTF</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="button">Home</a></li>
-            <li><a href="challenges.html" class="button">Challenges</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Welcome to the CAMDF CTF!</h2>
-        <p>This CTF is made as a project by Vilnius University Information Security and Cybesecurity students Adris and Matas</p>
-    </section>
-    <footer>
-        <p>&copy; 2023 My Website. All rights reserved.</p>
-    </footer>
+  <canvas id="Matrix"></canvas>
+  <script src=" ./matrix.js"></script>
+  <header>
+    <h1 class="title">CAMDF CTF</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="button">Home</a></li>
+      <li><a href="challenges.html" class="button">Challenges</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h1>Challenges:</h1>
+    <div class="challenges">
+      <div class="challenge-item" data-challenge="1">
+  <h3>Challenge 1 (Easy)</h3>
+  <div class="description">
+    <p>In this challenge you will have to understand what it means to be a real man. A real man really all he does is just lifts fucking heavy shit all day and then he listens to music. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
+  </div>
+  <div class="flag-form" style="display: none;">
+    <form action="/submit_flag" method="post">
+      <label for="flag">Submit Flag:</label>
+      <div class="input-group">
+        <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
+        <button type="submit">Submit Flag</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="challenge-item" data-challenge="2">
+<h3>Challenge 2 (Medium)</h3>
+<div class="description">
+<p>You were given a zip file full of some beautiful anime pussy. BUT this god damn stupid homie of yours put a password on it and now you cannot access and relax. Do you have what it takes to look at the beautiful anime women?</p>
+</div>
+<div class="flag-form" style="display: none;">
+<form action="/submit_flag" method="post">
+<label for="flag">Submit Flag:</label>
+<div class="input-group">
+  <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
+  <button type="submit">Submit Flag</button>
+</div>
+</form>
+</div>
+</div>
+
+<div class="challenge-item" data-challenge="3">
+<h3>Challenge 3 (Hard)</h3>
+<div class="description">
+<p>In this challenge you will have to understand what it means to be a real man. A real man really all he does is just lifts fucking heavy shit all day and then he listens to music. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
+</div>
+<div class="flag-form" style="display: none;">
+<form action="/submit_flag" method="post">
+<label for="flag">Submit Flag:</label>
+<div class="input-group">
+  <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
+  <button type="submit">Submit Flag</button>
+</div>
+</form>
+</div>
+</div>
+
+    </div>
+  </section>
+  <script src="scripts.js"></script>
+  <footer>
+    <p>&copy; 2023 CAMDF CTF. All rights reserved.</p>
+  </footer>
 </body>
 </html>
