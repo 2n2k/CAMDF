@@ -1,0 +1,32 @@
+CTF užduotys
+    1. Beeps n boops (easy)
+Plan: morse.wav
+    2. Rockyou.zip (medium)
+Password: bettyboop1
+    3. Crypted flag‘as (hard)
+Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13 Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
+    4. Path towards the flag (easy)
+Metadata in picture (category: city)
+FLAM{M4K1NG_MY_W4Y_D0WNT0WN}
+    5. Magic (hard)
+FLAM{M4GIC_BYT3S}
+    6. C++ programa (medium)
+    7. Steghide data (medium)
+    8. Unlisted youtube video in a playlist (easy)
+    9. Exported firewall rules (hard)
+    10. 
+
+    • Užkoduot flag‘ą su encryptoriu ir įdet į html kodą
+    • Zip‘as su slaptiku
+    • Morzės kodo audio failas
+    • Įdėt flag‘ą į metadata arba hide in binary (su Steghide‘u kokiu)
+    • Magic bytes change?
+    • Galima įdėt basic ass c++ programą ir užslėpt komandą joje. Sakykim:
+
+(Paleidi programą):
+Skaičiuoklė, įveskite kaip norit skaičiuoti
+Komandos:
+Pridėti, atimti, dauginti, dalinti
+
+O pačiam kode dar yra paslėpta, kad jeigu vartotojas parašo ten kokį „flag“ kaip inputą tai duoda flag‘ą ar dar kažką tokio :DD
+
