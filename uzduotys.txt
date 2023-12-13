@@ -3,6 +3,7 @@ CTF užduotys
 Plan: morse.wav
     2. Rockyou.zip (medium) DONE
 Password: bettyboop1
+Flag: FLAM{B3ttyB00p_S3cur3d}
     3. Crypted flag‘as (hard) DONE
 Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13 Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
     4. Path towards the flag (easy) DONE
@@ -11,8 +12,11 @@ FLAM{M4K1NG_MY_W4Y_D0WNT0WN}
     5. Magic (hard) DONE
 FLAM{M4GIC_BYT3S}
     6. C++ programa (medium)
-    7. Steghide data (medium)
-    8. Unlisted youtube video in a playlist (easy)
+    7. Steghide data (medium) DONE
+    flag: FLAM{St3g4n0_M1sdir3ct}
+    8. Unlisted youtube video in a playlist (easy) DONE
+    https://www.youtube.com/channel/UCdL7-rmnu4bAl74EJcqewyQ
+    FLAG: FLAM{Unl1st3d_G3m}
     9. Exported firewall rules (hard)
     10. 
 
