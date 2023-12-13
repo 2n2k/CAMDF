@@ -61,13 +61,13 @@ section {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value (last parameter) to control transparency */
     color: white;
+    padding-bottom: 70px;
 }
 
 footer {
     background-color: rgba(70,100,70, 0.3);
     color: white;
     text-align: center;
-    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
