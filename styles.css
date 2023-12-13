@@ -177,3 +177,16 @@ button[type="submit"]:hover {
 .flag-form {
   animation: fadeIn 0.5s ease-in-out;
 }
+
+/* Title styles */
+.title {
+    margin: 0;
+    padding: 20px; /* Adjust padding as needed */
+    text-align: center;
+    color: transparent;
+    position: relative;
+    font-size: 3em; /* Adjust font size as needed */
+    background-image: linear-gradient(to right, #00ff00, #000000); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    background-clip: text; /* Clip the text to the background */
+}
