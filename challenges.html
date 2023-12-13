@@ -13,10 +13,10 @@
     </style>
 </head>
 <body>
-  <canvas id="Matrix"></canvas>
-  <script src=" ./matrix.js"></script>
   <header>
     <h1 class="title">CAMDF CTF</h1>
+    <canvas id="Matrix"></canvas>
+    <script src=" ./matrix.js"></script>
   </header>
   <nav>
     <ul>
@@ -26,57 +26,54 @@
     </ul>
   </nav>
   <section>
+    <p> Flags are case sensitive! </p>
     <h1>Challenges:</h1>
     <div class="challenges">
       <div class="challenge-item" data-challenge="1">
-  <h3>Challenge 1 (Easy)</h3>
+  <h3>Beeps n boops (Easy)</h3>
   <div class="description">
-    <p>In this challenge you will have to understand what it means to be a real man. A real man really all he does is just lifts fucking heavy shit all day and then he listens to music. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
+    <p>In this challenge you will have to understand what it means to be a real man. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
+    <a href="files/1Morse_flag.wav" download="1Morse_flag.wav" class="download-button">Download Challenge </a>
   </div>
   <div class="flag-form" style="display: none;">
-    <form action="/submit_flag" method="post">
-      <label for="flag">Submit Flag:</label>
-      <div class="input-group">
-        <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
-        <button type="submit">Submit Flag</button>
+          <label for="flag-1">Submit Flag:</label>
+          <div class="input-group">
+            <input type="text" id="flag-1" class="flag-input" placeholder="FLAM{...}">
+            <button type="button">Submit Flag</button>
+          </div>
+        </div>
       </div>
-    </form>
-  </div>
-</div>
 <div class="challenge-item" data-challenge="2">
-<h3>Challenge 2 (Medium)</h3>
-<div class="description">
-<p>You were given a zip file full of some beautiful anime pussy. BUT this god damn stupid homie of yours put a password on it and now you cannot access and relax. Do you have what it takes to look at the beautiful anime women?</p>
-</div>
-<div class="flag-form" style="display: none;">
-<form action="/submit_flag" method="post">
-<label for="flag">Submit Flag:</label>
-<div class="input-group">
-  <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
-  <button type="submit">Submit Flag</button>
-</div>
-</form>
-</div>
-</div>
+    <h3>Locked zip (Medium)</h3>
+    <div class="description">
+        <p>You were given a zip file. Find the password</p>
+        <a href="files/2Rockyou.zip" download="2Rockyou.zip" class="download-button">Download Challenge</a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-2">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-2" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+        </div>
 
 <div class="challenge-item" data-challenge="3">
-<h3>Challenge 3 (Hard)</h3>
-<div class="description">
-<p>In this challenge you will have to understand what it means to be a real man. A real man really all he does is just lifts fucking heavy shit all day and then he listens to music. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
-</div>
-<div class="flag-form" style="display: none;">
-<form action="/submit_flag" method="post">
-<label for="flag">Submit Flag:</label>
-<div class="input-group">
-  <input type="text" id="flag" name="flag" placeholder="FLAM{...}">
-  <button type="submit">Submit Flag</button>
-</div>
-</form>
-</div>
-</div>
-
+    <h3>Magic (Hard)</h3>
+    <div class="description">
+        <p>THERES MAGIC IN DA HOUSE. Magic doing magical things when the magic magics everyone kneels.</p>
+        <a href="files/3UZD.txt" download="3UZD.txt" class="download-button">Download Challenge</a>
     </div>
-  </section>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-3">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-3" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+        </div>
+
+</section>
   <script src="scripts.js"></script>
   <footer>
     <p>&copy; 2023 CAMDF CTF. All rights reserved.</p>
