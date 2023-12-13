@@ -6,6 +6,12 @@ const correctFlags = {
   // Add more challenges and their respective flag hashes as needed
 };
 
+const redHerrings = {
+  herring_1: '551e1743f2aedbdf3445f5ca6cce284cdcec7180297ed12fdfafe569e3e26034'
+};
+
+const submittedCorrectFlags = JSON.parse(localStorage.getItem('submittedFlags')) || {};
+
 // Function to encrypt input using SHA256
 async function sha256(input) {
   const hashBuffer = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
@@ -15,68 +21,114 @@ async function sha256(input) {
 }
 
 // Function to handle form submission
-async function submitFlag(challengeId) {
+async function submitFlag(challengeId, item, clickHandler) {
+  const successMessage = document.querySelector(`[data-challenge="${challengeId}"] .success-message`);
+  const form = document.querySelector(`[data-challenge="${challengeId}"] .flag-form`);
+  const submitButton = document.querySelector(`[data-challenge="${challengeId}"] .flag-form button`);
+
   const flagInput = document.getElementById(`flag-${challengeId}`);
   const submittedFlag = flagInput.value;
 
   // Encrypt submitted flag using SHA256
   const hashedFlag = await sha256(submittedFlag);
 
-  // Check if the hashed input matches the correct flag hash for the current challenge
-  if (hashedFlag === correctFlags[`challenge_${challengeId}`]) {
-    alert('Congratulations! The flag is correct.');
-    // Here you can perform actions for correct flag submission for this challenge
+  if (Object.values(redHerrings).includes(hashedFlag)) {
+    alert('You have found a red herring! Keep looking...');
   } else {
-    alert('Sorry, the flag is not correct. Please try again.');
-    // Here you can handle incorrect flag submission
+    // Check if the hashed input matches the correct flag hash for the current challenge
+    if (hashedFlag === correctFlags[`challenge_${challengeId}`]) {
+      form.style.display = 'none';
+      successMessage.style.display = 'block';
+
+      // Mark the correct flag as submitted for this challenge
+      submittedCorrectFlags[challengeId] = true;
+      localStorage.setItem('submittedFlags', JSON.stringify(submittedCorrectFlags));
+
+      // Disabling further interaction with the challenge
+      item.removeEventListener('click', clickHandler);
+      submitButton.disabled = true;
+    } else {
+      alert('Sorry, the flag is not correct. Please try again.');
+      // Here you can handle incorrect flag submission
+    }
   }
 }
 
 document.querySelectorAll('.challenge-item').forEach(item => {
-  // Extract the difficulty from the challenge header
   const difficulty = item.querySelector('h3').innerText.split('(')[1].split(')')[0].toLowerCase();
 
-  // Update the text color based on difficulty
   switch (difficulty) {
     case 'easy':
-      item.querySelector('h3').style.color = 'green'; // Change color for Easy difficulty
+      item.querySelector('h3').style.color = 'green';
       break;
     case 'medium':
-      item.querySelector('h3').style.color = 'yellow'; // Change color for Medium difficulty
+      item.querySelector('h3').style.color = 'yellow';
       break;
     case 'hard':
-      item.querySelector('h3').style.color = 'red'; // Change color for Hard difficulty
+      item.querySelector('h3').style.color = 'red';
       break;
     default:
       break;
   }
 
-  item.addEventListener('click', (event) => {
-    const description = item.querySelector('.description');
-    const form = item.querySelector('.flag-form');
+  const description = item.querySelector('.description');
+  const form = item.querySelector('.flag-form');
+  const successMessage = item.querySelector('.success-message');
+  const challengeId = item.getAttribute('data-challenge');
+  const success = submittedCorrectFlags[challengeId];
 
-    // Check if the clicked target is not inside the form or description
-    if (!form.contains(event.target) && !description.contains(event.target)) {
-    // Close all open challenges except the one clicked
+  const hideOtherChallenges = () => {
     document.querySelectorAll('.challenge-item').forEach(challenge => {
       const desc = challenge.querySelector('.description');
       const frm = challenge.querySelector('.flag-form');
+      const sccs = challenge.querySelector('.success-message');
       if (challenge !== item) {
         desc.style.display = 'none';
         frm.style.display = 'none';
+        sccs.style.display = submittedCorrectFlags[challenge.getAttribute('data-challenge')] ? 'block' : 'none';
       }
     });
+  };
 
-    // Toggle visibility of description and form for the clicked challenge
-    description.style.display = description.style.display === 'block' ? 'none' : 'block';
-    form.style.display = description.style.display; // Set form display to match description
-  }
-});
+  const clickHandler = () => {
+    if (!success) {
+      hideOtherChallenges();
+      description.style.display = 'block';
+      form.style.display = 'block';
+      successMessage.style.display = 'none';
+    }
+  };
 
-  // Attach submitFlag function to each submit button click
+  item.addEventListener('click', clickHandler);
+
   const submitButton = item.querySelector('.flag-form button');
-  submitButton.addEventListener('click', (event) => {
-    const challengeId = item.getAttribute('data-challenge');
-    submitFlag(challengeId);
+  submitButton.addEventListener('click', async () => {
+    await submitFlag(challengeId, item, clickHandler);
+
+    if (submittedCorrectFlags[challengeId]) {
+      hideOtherChallenges();
+      successMessage.style.display = 'block';
+      form.style.display = 'none';
+      description.style.display = 'none';
+
+      // Disabling further interaction with the challenge after submission
+      item.removeEventListener('click', clickHandler);
+      submitButton.disabled = true;
+
+      // Store the success state in localStorage
+      submittedCorrectFlags[challengeId] = true;
+      localStorage.setItem('submittedFlags', JSON.stringify(submittedCorrectFlags));
+    }
   });
+
+  // Check if the challenge has been previously solved and show the success message
+  if (success) {
+    hideOtherChallenges();
+    successMessage.style.display = 'block';
+    form.style.display = 'none';
+    description.style.display = 'none';
+
+    item.removeEventListener('click', clickHandler);
+    submitButton.disabled = true;
+  }
 });
