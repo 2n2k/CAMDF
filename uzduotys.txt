@@ -1,7 +1,7 @@
 CTF užduotys
     1. Beeps n boops (easy) DONE
 Plan: morse.wav
-    2. Rockyou.zip (medium) 
+    2. Rockyou.zip (medium) DONE
 Password: bettyboop1
     3. Crypted flag‘as (hard) DONE
 Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13 Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
