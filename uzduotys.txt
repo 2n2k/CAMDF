@@ -18,7 +18,7 @@ FLAM{M4GIC_BYT3S}
     https://www.youtube.com/channel/UCdL7-rmnu4bAl74EJcqewyQ
     FLAG: FLAM{Unl1st3d_G3m}
     9. Exported firewall rules (hard)
-    10. 
+    10. Hidden in home page html
 
     • Užkoduot flag‘ą su encryptoriu ir įdet į html kodą
     • Zip‘as su slaptiku
