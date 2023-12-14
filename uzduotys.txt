@@ -1,11 +1,24 @@
 CTF užduotys
+
     1. Beeps n boops (easy) DONE
-Plan: morse.wav
-    2. Rockyou.zip (medium) DONE
-Password: bettyboop1
-Flag: FLAM{B3ttyB00p_S3cur3d}
-    3. Crypted flag‘as (hard) DONE
-Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13 Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
+    zip: Beeps_n_boops.zip
+    file: morse.wav
+    Description: We have received an audio file which is full of some randomly spaced boops and beeps. We think it is trying to say something...
+
+    2. Locked zip (medium) DONE
+    zip: rockyou.zip
+    Password: bettyboop1
+    Flag: FLAM{B3ttyB00p_S3cur3d}
+    Description: There is a locked zip file. We forgot the password. Help!
+
+    3. Scrambled (hard) DONE
+    zip: scrambled.zip
+    file: scrambled.txt
+    Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13: Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64                 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
+    Description: !ti edoceD .egasseM neddiH repuS a sI sihT
+    R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
+
+
     4. Path towards the flag (easy) DONE
 Metadata in picture (category: city)
 FLAM{M4K1NG_MY_W4Y_D0WNT0WN} 
