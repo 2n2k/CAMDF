@@ -76,3 +76,7 @@ CTF užduotys
     Flag: FLAM(th1s_1s_N0T_a_fl4g)
     Description: I've lost my flag somewhere here. This is not it. Inspect somewhere else!
 
+--------------------
+Red herrings: FLAM{C4LCUL4TOR_FL4G}
+FLAM{C0RR3CT_C4LCUL4T0R_FL4G}
+(Dar buvo kazkoks youtubej bet nebeatsimenu jau, veliau patikrinsiu, kode jis yra)
