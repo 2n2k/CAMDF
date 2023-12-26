@@ -24,8 +24,8 @@ CTF užduotys
     I worry for my mind - it's BASE is scrambled,
     Walking forward Thirteen steps a day,
     I'll push until I ROT away
-    R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
 
+    R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
     Hint: BASE64 -> ROT13 -> flag
 
     4. Path towards the flag (easy) DONE
