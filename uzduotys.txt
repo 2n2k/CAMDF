@@ -17,14 +17,13 @@ CTF užduotys
     3. Scrambled (hard) DONE
     zip: none
     file: none
-    Flag: The flag is: FLAM{D3CRYPT3ED} -> ROT13: Gur synt vf: SYNZ{Q3PELCG3RQ} -> BASE64                 R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
+    Flag: The flag is: FLAM{D3CRYPT3ED}
     Description:
 For Sixty Four days I'm stranded,
 I worry for my mind - it's BASE is scrambled,
 Walking forward Thirteen steps a day,
 I'll push until I ROT away
     R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0=
-    (p.s. it is not reversed)
     Hint: BASE64 -> ROT13 -> flag
 
     4. Path towards the flag (easy) DONE
@@ -44,16 +43,16 @@ I'll push until I ROT away
     6. Calculator (medium)
     zip: calculator.zip
     file:
-    Flag:
+    Flag: FLAM{D3V_C4LCUL4T0R}
     Description: This is just a simple calculator...
-    Hint: 
+    Hint: developer (variable uqLpJ) -> (SpvRe function, string ppppp) pass: f00l3d -> gauni flag
 
-    7. Hiding in (not so) plain sight (medium) DONE
+    7. Hiding in plain sight (medium) DONE
     zip: frosty_mountains.zip
     file: frosty_mountains.jpg
     Flag: FLAM{St3g4n0_M1sdir3ct}
     Description: We've left a flag in the frosty mountains. This is the only picture we have. Can you return the flag?
-    Hint: binwalk the .jpg (gal bbzn Matai delete this to confirm arba pakeisk)
+    Hint: binwalk the .jpg !!!!!!!! (gal bbzn Matai delete this to confirm arba pakeisk) !!!!!!!!!!!!!!
 
     8. Youtubers (easy) DONE
     zip: none
@@ -65,28 +64,13 @@ I'll push until I ROT away
     
     9. Firewall (hard)
     zip: firewall.zip
-    file: 
+    file: ////// MATAI UPDATE THIS TOO!!! //////////
     Flag: FLAM(Rul3s_4re_1n_pl4ce)
     Description: The rules are in place for a reason.
 
-    10. Hidden in home page html (easy)
+    10. Lost (easy)
     zip: none
     file: none
     Flag: FLAM(th1s_1s_N0T_a_fl4g)
-    Description: This is not a flag. Inspect somewhere else!
-
-
-    • Užkoduot flag‘ą su encryptoriu ir įdet į html kodą
-    • Zip‘as su slaptiku
-    • Morzės kodo audio failas
-    • Įdėt flag‘ą į metadata arba hide in binary (su Steghide‘u kokiu)
-    • Magic bytes change?
-    • Galima įdėt basic ass c++ programą ir užslėpt komandą joje. Sakykim:
-
-(Paleidi programą):
-Skaičiuoklė, įveskite kaip norit skaičiuoti
-Komandos:
-Pridėti, atimti, dauginti, dalinti
-
-O pačiam kode dar yra paslėpta, kad jeigu vartotojas parašo ten kokį „flag“ kaip inputą tai duoda flag‘ą ar dar kažką tokio :DD
+    Description: I've lost my flag somewhere here. This is not it. Inspect somewhere else!
 
