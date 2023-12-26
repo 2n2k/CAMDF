@@ -19,7 +19,6 @@ CTF užduotys
     file: none
     Flag: The flag is: FLAM{D3CRYPT3ED}
     Description:
-
     For Sixty Four days I'm stranded,
     I worry for my mind - it's BASE is scrambled,
     Walking forward Thirteen steps a day,
