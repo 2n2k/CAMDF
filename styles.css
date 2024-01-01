@@ -19,6 +19,14 @@ canvas#Matrix {
   z-index: -1;
 }
 
+canvas#Fireworks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
 header {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) to control transparency */
@@ -64,6 +72,7 @@ section {
     padding-bottom: 70px;
 }
 
+
 footer {
     background-color: rgba(70,100,70, 0.3);
     color: white;
@@ -92,17 +101,17 @@ footer {
 
 .description {
   display: none;
-  color: white;
+/*  color: darkseagreen; */
   padding: 10px;
-  background-color: rgba(20, 60, 20, 0.5);
+  /* background-color: rgba(20, 60, 20, 0.5); */
   margin-top: 10px;
-  /* Set display to inline-block */
-  display: inline-block;
+  display: block;
   /* Optional: add max-width to prevent it from growing too wide */
   max-width: 40vw;
   /* Add other styles as needed */
   border: 1px solid #ccc; /* Border styles */
   border-radius: 4px; /* Rounded corners */
+  word-wrap: break-word;
 }
 
 
@@ -189,4 +198,76 @@ button[type="submit"]:hover {
     background-image: linear-gradient(to right, #00ff00, #000000); /* Gradient colors */
     -webkit-background-clip: text; /* Clip the text to the background */
     background-clip: text; /* Clip the text to the background */
+}
+
+.finish-text-desc {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid white; /* Border styles */
+  border-radius: 4px; /* Rounded corners */
+  word-wrap: break-word;
+}
+
+.finish-text label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  background-color: rgba(0, 255, 0, 1);
+  margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+#userName {
+  display: block;
+  min-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(255,255,255, 0.2);
+  border: 2px solid transparent;
+  border-color: whitesmoke;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: rgba(14,255,60, 0.5);
+  color: #fff;
+  border: none;
+  animation: flashySubmitBackground 8s infinite;
+}
+
+/* Apply the animation to the text */
+.finish-text-rainbow {
+  animation: flashyBrightRainbow 8s infinite; /* Adjust the duration as needed */
+}
+/* Rainbow text color */
+@keyframes flashyBrightRainbow {
+  0% { color: #FF0000; text-shadow: 0 0 5px #FF0000; } /* Red */
+  20% { color: #FF7F00; text-shadow: 0 0 10px #FF7F00; } /* Orange */
+  40% { color: #FFFF00; text-shadow: 0 0 15px #FFFF00; } /* Yellow */
+  60% { color: #00FF00; text-shadow: 0 0 20px #00FF00; } /* Green */
+  80% { color: #00FFFF; text-shadow: 0 0 25px #00FFFF; } /* Cyan */
+  100% { color: #FF00FF; text-shadow: 0 0 30px #FF00FF; } /* Magenta */
+}
+/* Rainbow border */
+@keyframes flashyInputBorder {
+  0% { border-color: rgba(200, 255, 200, 0.3); }
+  20% { border-color: rgba(255, 0, 0, 0.5); }
+  40% { border-color: rgba(255, 255, 0, 0.5); }
+  60% { border-color: rgba(0, 255, 0, 0.5); }
+  80% { border-color: rgba(0, 255, 255, 0.5); }
+  100% { border-color: rgba(255, 0, 255, 0.5); }
+}
+
+/* Rainbow background */
+@keyframes flashySubmitBackground {
+  0% { background-color: rgba(14, 255, 60, 0.5); }
+  20% { background-color: rgba(255, 0, 0, 0.5); }
+  40% { background-color: rgba(255, 255, 0, 0.5); }
+  60% { background-color: rgba(0, 255, 0, 0.5); }
+  80% { background-color: rgba(0, 255, 255, 0.5); }
+  100% { background-color: rgba(255, 0, 255, 0.5); }
 }
