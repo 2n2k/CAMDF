@@ -140,7 +140,7 @@ input[type="text"] {
   outline: none;
 }
 
-button[type="submit"] {
+button[type="button"] {
   padding: 6px 12px;
   background-color: rgba(0, 140, 0, 0.5);
   color: white;
@@ -148,7 +148,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type="button"]:hover {
   background-color: rgba(0, 200, 0, 0.5);
 }
 
