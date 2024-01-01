@@ -1,7 +1,7 @@
 # CAMDF CTF
 
 ## [EN] Welcome to CAMDF CTF
-Embark on CAMDF CTF with 10 engaging challenges. Each one tests your skills in unique ways. Let's see what you've got!
+Embark CAMDF CTF with 10 engaging challenges. Each one tests your skills in unique ways. Let's see what you've got!
 
 ### Getting Started
 The website is hosted on GitHub. https://2n2k.github.io/CAMDF/index.html
@@ -10,7 +10,7 @@ The website is hosted on GitHub. https://2n2k.github.io/CAMDF/index.html
 - **Contact**: Need to reach out? Go to `contact.html` for contact information.
 
 ## [LT] Sveiki atvykę į CAMDF CTF
-Pradėkite CAMDF CTF su 10 įtraukiančiomis užduotimis. Kiekviena išbandys jūsų įgūdžius. Parodykite, ką mokate!
+Išbandykite savo jėgas CAMDF CTF su 10 įtraukiančių užduočių. Kiekviena jų išbandys jūsų įgūdžius. Parodykite, ką mokate!
 
 ### Kaip Pradėti
 Svetainė yra talpinama GitHub. https://2n2k.github.io/CAMDF/index.html
