@@ -22,18 +22,39 @@
     <ul>
       <li><a href="index.html" class="button">Home</a></li>
       <li><a href="challenges.html" class="button">Challenges</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="contacts.html">Contact us</a></li>
     </ul>
   </nav>
+
+  <section id="finish-submit" style="display: none;">
+  <form id="finish">
+    <div class="finish-text-desc">
+    <p class="finish-text-rainbow"><strong>Congratulations! </strong> You have solved all of the challenges! <br>
+    You can submit Your name or username so that we could register that YOU are incredible, and managed to <b> win CAMDF! </b>
+    </p>
+      <div class="finish-text">
+      <!-- Hidden input field to capture the submission time -->
+      <input type="hidden" name="submissionTime" id="submissionTime">
+      <span id="currentTime"></span>
+    </div>
+      <label for="userName">Your Name/Username:</label>
+      <input type="text" name="userName" id="userName" placeholder="name/nickname" maxlength="50">
+    <input type="submit" id="button" value="Submit">
+      </div>
+  </form>
+  <canvas id="Fireworks"></canvas>
+  <script src="./fireworks.js"></script>
+  </section>
+
   <section>
-    <p> Flags are case sensitive! </p>
-    <h1>Challenges:</h1>
-    <div class="challenges">
+    <p style = "color: red"><strong> Flags are case sensitive! </strong> </p>
+    <h1 style = "color: whitesmoke">Challenges:</h1>
+      <div class="challenges">
       <div class="challenge-item" data-challenge="1">
   <h3>Beeps n boops (Easy)</h3>
   <div class="description">
-    <p>In this challenge you will have to understand what it means to be a real man. Well one day our ideal man called Bob was sent an interesting audo file. The audio file was full of boops and beeps and he was surprised because he couldn't understand anything. Do you understand what the audio file says?</p>
-    <a href="files/challenge1.wav" download="challenge1.wav" class="download-button">Download Challenge </a>
+    <p> We have received an audio file which is full of some randomly spaced boops and beeps. We think it is trying to say something...</p>
+    <a href="files/Beeps_n_boops.zip" download="Beeps_n_boops.zip" class="download-button">Download Challenge </a>
   </div>
   <div class="flag-form" style="display: none;">
           <label for="flag-1">Submit Flag:</label>
@@ -42,13 +63,14 @@
             <button type="button">Submit Flag</button>
           </div>
         </div>
-        <p class="success-message" style="display: none;">Congratulations, you have found the correct flag!</p>
+        <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
       </div>
+
 <div class="challenge-item" data-challenge="2">
     <h3>Locked zip (Medium)</h3>
     <div class="description">
-        <p>You were given a zip file. Find the password</p>
-        <a href="files/2Rockyou.zip" download="2Rockyou.zip" class="download-button">Download Challenge</a>
+        <p>There is a locked zip file. We forgot the password. Help!</p>
+        <a href="files/rockyou.zip" download="rockyou.zip" class="download-button">Download Challenge</a>
     </div>
     <div class="flag-form" style="display: none;">
             <label for="flag-2">Submit Flag:</label>
@@ -57,14 +79,17 @@
               <button type="button">Submit Flag</button>
             </div>
           </div>
-          <p class="success-message" style="display: none;">Congratulations, you have found the correct flag!</p>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
         </div>
 
 <div class="challenge-item" data-challenge="3">
-    <h3>Magic (Hard)</h3>
+    <h3>Scrambled (Hard)</h3>
     <div class="description">
-        <p>THERES MAGIC IN DA HOUSE. Magic doing magical things when the magic magics everyone kneels.</p>
-        <a href="files/3UZD.txt" download="3UZD.txt" class="download-button">Download Challenge</a>
+    <p> <i> I worry for my mind - it's BASE is scrambled, <br>
+        For Sixty Four days I've been stranded, <br>
+        I'll push until I ROT away, <br>
+        Walking forward Thirteen steps a day. </i> <br> <br>
+    R3VyIHN5bnQgdmY6IFNZTlp7UTNQRUxDRzNSUX0= </p>
     </div>
     <div class="flag-form" style="display: none;">
             <label for="flag-3">Submit Flag:</label>
@@ -73,13 +98,124 @@
               <button type="button">Submit Flag</button>
             </div>
           </div>
-          <p class="success-message" style="display: none;">Congratulations, you have found the correct flag!</p>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
         </div>
 
+        <div class="challenge-item" data-challenge="4">
+    <h3>Path towards the flag (Easy)</h3>
+    <div class="description">
+      <p> What a beautiful picture. Can you figure out where this was taken?</p>
+      <a href="files/path.zip" download="path.zip" class="download-button">Download Challenge </a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-4">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-4" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="5">
+    <h3>Magic (hard)</h3>
+    <div class="description">
+      <p> There is magic IN THE AIR... or this file. Are you a magician by any chance?</p>
+      <a href="files/magic.zip" download="magic.zip" class="download-button">Download Challenge </a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-5">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-5" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="6">
+    <h3>Calculator (medium)</h3>
+    <div class="description">
+      <p> This is just a simple calculator...</p>
+      <a href="files/calculator.zip" download="calculator.zip" class="download-button">Download Challenge </a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-6">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-6" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="7">
+    <h3>Hiding in plain sight (medium)</h3>
+    <div class="description">
+      <p> We've left a flag in the frosty mountains. This is the only picture we have. Can you return the flag?</p>
+      <a href="files/frosty_mountains.zip" download="frosty_mountains.zip" class="download-button">Download Challenge </a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-7">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-7" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="8">
+    <h3>Youtubers (easy)</h3>
+    <div class="description">
+      <p> Don't forget to check out our youtube channel! <br>
+    https://www.youtube.com/channel/UCdL7-rmnu4bAl74EJcqewyQ</p>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-8">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-8" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="9">
+    <h3>Firewall (hard)</h3>
+    <div class="description">
+      <p> The rules are in place for a reason.</p>
+      <a href="files/firewall.zip" download="firewall.zip" class="download-button">Download Challenge </a>
+    </div>
+    <div class="flag-form" style="display: none;">
+            <label for="flag-9">Submit Flag:</label>
+            <div class="input-group">
+              <input type="text" id="flag-9" class="flag-input" placeholder="FLAM{...}">
+              <button type="button">Submit Flag</button>
+            </div>
+          </div>
+          <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+        </div>
+
+        <div class="challenge-item" data-challenge="10">
+        <h3>Lost (easy)</h3>
+        <div class="description">
+          <p> I've lost my flag somewhere here. This is not it. <b> Inspect </b> somewhere else!</p>
+        </div>
+        <div class="flag-form" style="display: none;">
+                <label for="flag-10">Submit Flag:</label>
+                <div class="input-group">
+                  <input type="text" id="flag-10" class="flag-input" placeholder="FLAM{...}">
+                  <button type="button">Submit Flag</button>
+                </div>
+              </div>
+              <p class="success-message" style="display: none;">Congratulations, You have solved this challenge!</p>
+            </div>
 </section>
   <script src="scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <footer>
-    <p>&copy; 2023 CAMDF CTF. All rights reserved.</p>
+    <p>&copy; 2023 CAMDF CTF All rights reserved.</p>
   </footer>
 </body>
 </html>
