@@ -78,4 +78,4 @@ CTF užduotys
 --------------------
 Red herrings: FLAM{C4LCUL4TOR_FL4G}
 FLAM{C0RR3CT_C4LCUL4T0R_FL4G}
-(Dar buvo kazkoks youtubej bet nebeatsimenu jau, veliau patikrinsiu, kode jis yra)
+FLAM{F0und_CAMDF_Unl1st3d_G3m}
