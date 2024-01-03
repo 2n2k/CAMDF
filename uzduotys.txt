@@ -61,7 +61,7 @@ CTF užduotys
     Flag: FLAM{Unl1st3d_G3m}
     Description: Don't forget to check out our youtube channel!
     https://www.youtube.com/channel/UCdL7-rmnu4bAl74EJcqewyQ
-    Hint: in the playlist, 6 seconds of nothing video comments
+    Hint: in the playlist, 6 seconds of nothing video description
     
     9. Firewall (hard)
     zip: firewall.zip
