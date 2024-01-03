@@ -53,7 +53,7 @@ CTF užduotys
     file: frosty_mountains.jpg
     Flag: FLAM{St3g4n0_M1sdir3ct}
     Description: We've left a flag in the frosty mountains. This is the only picture we have. Can you return the flag?
-    Hint: binwalk the .jpg !!!!!!!! (gal bbzn Matai delete this to confirm arba pakeisk) !!!!!!!!!!!!!!
+    Hint: binwalk the .jpg
 
     8. Youtubers (easy) DONE
     zip: none
