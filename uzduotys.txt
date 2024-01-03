@@ -2,7 +2,7 @@ CTF užduotys
 
     1. Beeps n boops (easy) DONE
     zip: Beeps_n_boops.zip
-    file: beeps.wav
+    file: challange1.wav
     Flag: FLAM{TH1SI5M0RS3FL4AG}
     Description: We have received an audio file which is full of some randomly spaced boops and beeps. We think it is trying to say something...
     Hint: Morse code
@@ -36,7 +36,7 @@ CTF užduotys
  
     5. Magic (hard) DONE
     zip: magic.zip
-    file: (shit i forgot) /////// MATAI UPDATE DIS PLS <3 ////////
+    file: 5 Magic.png
     Flag: FLAM{M4GIC_BYT3S}
     Description: There is magic IN THE AIR... or this file. Are you a magician by any chance?
     Hint: magic bytes change
@@ -65,7 +65,7 @@ CTF užduotys
     
     9. Firewall (hard)
     zip: firewall.zip
-    file: ////// MATAI UPDATE THIS TOO!!! //////////
+    file: fire.wfw
     Flag: FLAM(Rul3s_4re_1n_pl4ce)
     Description: The rules are in place for a reason.
 
