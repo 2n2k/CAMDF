@@ -31,7 +31,7 @@ header {
     height: 15%;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) to control transparency */
     color: white;
-    padding: 0px;
+    padding: 5px;
     text-align: center;
 }
 
