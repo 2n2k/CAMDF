@@ -43,19 +43,10 @@ function checkAllChallengesSolved() {
 
   if (solvedCount === totalChallenges && !allChallengesSolved) {
     allChallengesSolved = true;
-    console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-    console.log('All challenges are solved!');
-    console.log('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
     const finish = document.getElementById('finish-submit');
     finish.style.display = 'block';
   } else if (allChallengesSolved){
-    console.log('Blocking allChallengesSolved from being called again');
   } else {
-    console.log('------------------------------------------');
-    console.log('Not all challenges are solved yet.');
-    console.log('total challenges: ' + totalChallenges);
-    console.log('solved count: ' + solvedCount);
-    console.log('------------------------------------------');
   }
 }
 
@@ -72,18 +63,15 @@ function loadSubmittedFlagsFromLocalStorage(callback) {
 
 
 // Load submitted flags and then check if all challenges are solved
-console.log('Performing check upon loading submitted flags from local storage');
 loadSubmittedFlagsFromLocalStorage(checkAllChallengesSolved);
 
 // Check if all challenges are solved on page load
 document.addEventListener('DOMContentLoaded', () => {
   loadSubmittedFlagsFromLocalStorage(() => {
-    console.log('Performing check upon loading page')
     checkAllChallengesSolved();
   });
   // Initialize EmailJS
   emailjs.init('5WVH_sGj81sU7LxoB');
-  console.log('No comments should be here. If you see this or any other text in the console, remind me or Matas to delete it lmaooooo')
 });
 
 // Function to handle form submission
@@ -119,7 +107,6 @@ async function submitFlag(challengeId, item, clickHandler) {
       // Check all challenges solved only after a flag is submitted
       const flagSubmition = Object.values(submittedCorrectFlags).every(flag => flag);
       if (flagSubmition) {
-        console.log('Checking if all challenges were solved after a flag is submitted');
         checkAllChallengesSolved();
       }
     } else {
